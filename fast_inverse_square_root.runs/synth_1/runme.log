@@ -1,0 +1,863 @@
+
+*** Running vivado
+    with args -log fisr_rtl.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fisr_rtl.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source fisr_rtl.tcl -notrace
+Command: synth_design -top fisr_rtl -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1056 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 362.328 ; gain = 100.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fisr_rtl' [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:23]
+	Parameter MODULE_START bound to: 4'b0000 
+	Parameter INIT bound to: 4'b0001 
+	Parameter FLOAT_TO_FIXED bound to: 4'b0010 
+	Parameter MAGIC_SUB bound to: 4'b0011 
+	Parameter FLOAT_TO_FIXED2 bound to: 4'b0100 
+	Parameter FIRST_NEWTON_STEP bound to: 4'b0101 
+	Parameter SECOND_NEWTON_STEP bound to: 4'b0110 
+	Parameter DATA_OUTPUT bound to: 4'b0111 
+INFO: [Synth 8-6157] synthesizing module 'float_to_fixed' [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/float_to_fixed.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'float_to_fixed' (1#1) [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/float_to_fixed.sv:23]
+WARNING: [Synth 8-689] width (1) of port connection 'fixed_out' does not match port width (32) of module 'float_to_fixed' [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:52]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:72]
+WARNING: [Synth 8-6014] Unused sequential element int_representation_reg was removed.  [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:78]
+WARNING: [Synth 8-6014] Unused sequential element converter_input_reg was removed.  [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:84]
+WARNING: [Synth 8-6014] Unused sequential element half_input_reg was removed.  [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:85]
+WARNING: [Synth 8-3848] Net convertert_input in module/entity fisr_rtl does not have driver. [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'fisr_rtl' (2#1) [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:23]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[31]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[30]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[29]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[28]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[27]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[26]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[25]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[24]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[23]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[22]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[21]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[20]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[19]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[18]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[17]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[16]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[15]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[14]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[13]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[12]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[11]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[10]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[9]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[8]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[7]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[6]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[5]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[4]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[3]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[2]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[1]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 418.148 ; gain = 156.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 418.148 ; gain = 156.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 418.148 ; gain = 156.730
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fisr_rtl'
+INFO: [Synth 8-5544] ROM "fixed_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mul_reg_temp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ready_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            MODULE_START |                              000 |                             0000
+                    INIT |                              001 |                             0001
+          FLOAT_TO_FIXED |                              010 |                             0010
+               MAGIC_SUB |                              011 |                             0011
+         FLOAT_TO_FIXED2 |                              100 |                             0100
+       FIRST_NEWTON_STEP |                              101 |                             0101
+      SECOND_NEWTON_STEP |                              110 |                             0110
+             DATA_OUTPUT |                              111 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fisr_rtl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 418.148 ; gain = 156.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               62 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               31 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   8 Input     31 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fisr_rtl 
+Detailed RTL Component Info : 
++---Registers : 
+	               62 Bit    Registers := 1     
+	               31 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   8 Input     31 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 1     
+Module float_to_fixed 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'converter/sign_reg' into 'converter/shift_direction_reg' [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/float_to_fixed.sv:49]
+WARNING: [Synth 8-3936] Found unconnected internal register 'converter/fixed_out_reg' and it is trimmed from '32' to '1' bits. [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/float_to_fixed.sv:68]
+WARNING: [Synth 8-3917] design fisr_rtl has port state_out[3] driven by constant 0
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[31]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[30]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[29]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[28]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[27]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[26]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[25]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[24]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[23]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[22]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[21]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[20]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[19]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[18]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[17]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[16]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[15]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[14]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[13]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[12]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[11]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[10]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[9]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[8]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[7]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[6]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[5]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[4]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[3]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[2]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[1]
+WARNING: [Synth 8-3331] design fisr_rtl has unconnected port float_in[0]
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[31]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[32]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[33]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[34]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[35]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[36]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[37]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[38]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (converter_start_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\converter/shift_direction_reg )
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[7]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[8]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[9]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[10]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[11]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[12]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[13]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[14]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[16]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[17]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[18]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[19]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[20]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[21]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[22]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[23]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[24]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[25]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[26]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[27]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[28]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[29]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mul_reg_temp_reg[30] )
+INFO: [Synth 8-3886] merging instance 'converter/shift_direction_reg' (FDE) to 'converter/float_copy_reg[31]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[31]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[30]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[29]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[28]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[27]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[26]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[25]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[24]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[23]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[22]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[21]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[20]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[19]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[18]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[17]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[16]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[15]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[14]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[13]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[12]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[11]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[10]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[9]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[8]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[7]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[6]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[5]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[4]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[3]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[2]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[1]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'converter/float_copy_reg[0]' (FDE) to 'converter/shift_count_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\converter/fixed_temp_reg[0] )
+INFO: [Synth 8-3886] merging instance 'converter/shift_count_reg[0]' (FDE) to 'converter/shift_count_reg[1]'
+INFO: [Synth 8-3886] merging instance 'converter/shift_count_reg[1]' (FDE) to 'converter/shift_count_reg[2]'
+INFO: [Synth 8-3886] merging instance 'converter/shift_count_reg[2]' (FDE) to 'converter/shift_count_reg[3]'
+INFO: [Synth 8-3886] merging instance 'converter/shift_count_reg[3]' (FDE) to 'converter/shift_count_reg[4]'
+INFO: [Synth 8-3886] merging instance 'converter/shift_count_reg[6]' (FDE) to 'converter/shift_count_reg[4]'
+INFO: [Synth 8-3886] merging instance 'converter/shift_count_reg[7]' (FDE) to 'converter/shift_count_reg[4]'
+INFO: [Synth 8-3886] merging instance 'converter/shift_count_reg[4]' (FDE) to 'converter/shift_count_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\converter/shift_count_reg[5] )
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[30]' (FDE) to 'mul_reg_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[0]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'converter/fixed_out_reg[0]' (FDE) to 'converter/fixed_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[1]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[2]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[3]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[4]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[5]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[6]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mul_reg_temp_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\converter/ready_reg )
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[7]' (FDE) to 'temp_fixed_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[8]' (FDE) to 'temp_fixed_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[9]' (FDE) to 'temp_fixed_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[10]' (FDE) to 'temp_fixed_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[11]' (FDE) to 'temp_fixed_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[12]' (FDE) to 'temp_fixed_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[13]' (FDE) to 'temp_fixed_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[14]' (FDE) to 'temp_fixed_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[16]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[17]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[18]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[19]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[20]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[21]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[22]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[23]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[24]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[25]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[26]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[27]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'temp_fixed_out_reg[28]' (FDE) to 'temp_fixed_out_reg[30]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\temp_fixed_out_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\converter/fixed_temp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\temp_fixed_out_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fixed_out_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\temp_fixed_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fixed_out_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 573.816 ; gain = 312.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 573.816 ; gain = 312.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 573.844 ; gain = 312.426
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 573.844 ; gain = 312.426
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 573.844 ; gain = 312.426
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 573.844 ; gain = 312.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 573.844 ; gain = 312.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 573.844 ; gain = 312.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 573.844 ; gain = 312.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT3 |     1|
+|3     |LUT4 |     1|
+|4     |LUT5 |     3|
+|5     |FDRE |     7|
+|6     |IBUF |     3|
+|7     |OBUF |    36|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    52|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 573.844 ; gain = 312.426
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 71 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 573.844 ; gain = 312.426
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 573.844 ; gain = 312.426
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 686.184 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+132 Infos, 71 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 686.184 ; gain = 435.520
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 686.184 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.runs/synth_1/fisr_rtl.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fisr_rtl_utilization_synth.rpt -pb fisr_rtl_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 12 17:08:52 2021...
+
+*** Running vivado
+    with args -log fisr_rtl.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fisr_rtl.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source fisr_rtl.tcl -notrace
+Command: synth_design -top fisr_rtl -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13628 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 362.258 ; gain = 101.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fisr_rtl' [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:23]
+	Parameter MODULE_START bound to: 4'b0000 
+	Parameter INIT bound to: 4'b0001 
+	Parameter FLOAT_TO_FIXED bound to: 4'b0010 
+	Parameter WAIT_FOR_RESULT bound to: 4'b0011 
+	Parameter MAGIC_SUB bound to: 4'b0100 
+	Parameter FLOAT_TO_FIXED2 bound to: 4'b0101 
+	Parameter FIRST_NEWTON_STEP bound to: 4'b0110 
+	Parameter SECOND_NEWTON_STEP bound to: 4'b0111 
+	Parameter DATA_OUTPUT bound to: 4'b1000 
+INFO: [Synth 8-6157] synthesizing module 'float_2_fixed' [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:204]
+	Parameter INIT bound to: 2'b00 
+	Parameter SHIFT_LEFT bound to: 2'b01 
+	Parameter SHIFT_RIGHT bound to: 2'b10 
+	Parameter DATA_OUTPUT bound to: 2'b11 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:240]
+INFO: [Synth 8-6155] done synthesizing module 'float_2_fixed' (1#1) [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:204]
+WARNING: [Synth 8-350] instance 'converter' of module 'float_2_fixed' requires 6 connections, but only 5 given [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:49]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:74]
+INFO: [Synth 8-6155] done synthesizing module 'fisr_rtl' (2#1) [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:23]
+WARNING: [Synth 8-3331] design float_2_fixed has unconnected port float_in[31]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 418.008 ; gain = 156.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 418.008 ; gain = 156.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 418.008 ; gain = 156.879
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:240]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'float_2_fixed'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fisr_rtl'
+INFO: [Synth 8-5544] ROM "converter_start" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "converter_input" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mul_reg_temp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                             0000
+             SHIFT_RIGHT |                               01 |                             0010
+              SHIFT_LEFT |                               10 |                             0001
+             DATA_OUTPUT |                               11 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'float_2_fixed'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            MODULE_START |                        000000001 |                             0000
+                    INIT |                        000000010 |                             0001
+          FLOAT_TO_FIXED |                        000000100 |                             0010
+         WAIT_FOR_RESULT |                        000001000 |                             0011
+               MAGIC_SUB |                        000010000 |                             0100
+         FLOAT_TO_FIXED2 |                        000100000 |                             0101
+       FIRST_NEWTON_STEP |                        001000000 |                             0110
+      SECOND_NEWTON_STEP |                        010000000 |                             0111
+             DATA_OUTPUT |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fisr_rtl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 418.008 ; gain = 156.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               62 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               31 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 3     
+	   9 Input     32 Bit        Muxes := 1     
+	   9 Input     31 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fisr_rtl 
+Detailed RTL Component Info : 
++---Registers : 
+	               62 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               31 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   9 Input     32 Bit        Muxes := 1     
+	   9 Input     31 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 1     
+Module float_2_fixed 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'converter_input_reg' and it is trimmed from '32' to '31' bits. [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv:49]
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[31]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[32]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[33]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[34]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[35]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[36]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[37]' (FDE) to 'mul_reg_temp_reg[38]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[38]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[7]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[8]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[9]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[10]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[11]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[12]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[13]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[14]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[16]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[17]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[18]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[19]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[20]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[21]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[22]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[23]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[24]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[25]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[26]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[27]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[28]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[29]' (FDE) to 'mul_reg_temp_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mul_reg_temp_reg[30] )
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[30]' (FDE) to 'mul_reg_temp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[0]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[1]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[2]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[3]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[4]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[5]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mul_reg_temp_reg[6]' (FDE) to 'mul_reg_temp_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mul_reg_temp_reg[15] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 581.684 ; gain = 320.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 581.684 ; gain = 320.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 582.941 ; gain = 321.812
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 582.941 ; gain = 321.812
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 582.941 ; gain = 321.812
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 582.941 ; gain = 321.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 582.941 ; gain = 321.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 582.941 ; gain = 321.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 582.941 ; gain = 321.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     2|
+|3     |LUT1   |     1|
+|4     |LUT2   |    15|
+|5     |LUT3   |    10|
+|6     |LUT4   |    62|
+|7     |LUT5   |    30|
+|8     |LUT6   |    35|
+|9     |FDRE   |   242|
+|10    |FDSE   |     3|
+|11    |IBUF   |    35|
+|12    |OBUF   |    36|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+--------------+------+
+|      |Instance    |Module        |Cells |
++------+------------+--------------+------+
+|1     |top         |              |   472|
+|2     |  converter |float_2_fixed |   153|
++------+------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 582.941 ; gain = 321.812
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 582.941 ; gain = 321.812
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 582.941 ; gain = 321.812
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 689.961 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 689.961 ; gain = 436.535
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 689.961 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.runs/synth_1/fisr_rtl.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fisr_rtl_utilization_synth.rpt -pb fisr_rtl_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 13 13:22:51 2021...

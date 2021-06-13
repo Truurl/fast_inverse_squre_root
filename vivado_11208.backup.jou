@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May 20 10:53:41 2021
+# Process ID: 11208
+# Current directory: C:/Users/Kinga/Desktop/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10796 C:\Users\Kinga\Desktop\fast_inverse_square_root_K_B\fast_invrse_square_root_kb\fast_inverse_square_root\fast_inverse_square_root.xpr
+# Log file: C:/Users/Kinga/Desktop/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/vivado.log
+# Journal file: C:/Users/Kinga/Desktop/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Kinga/Desktop/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source float2fixed_tb.tcl
+close_sim
+launch_simulation
+source float2fixed_tb.tcl
+close_sim
