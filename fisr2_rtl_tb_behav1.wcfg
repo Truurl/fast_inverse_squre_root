@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fisr2_rtl_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fisr2_rtl_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="31085260000001fs"></ZoomEndTime>
+      <Cursor1Time time="1429207356000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="137"></NameColumnWidth>
+      <ValueColumnWidth column_width="154"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/fisr2_rtl_tb/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fisr2_rtl_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fisr2_rtl_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fisr2_rtl_tb/float_in" type="array">
+      <obj_property name="ElementShortName">float_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">float_in[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fisr2_rtl_tb/fixed_out" type="array">
+      <obj_property name="ElementShortName">fixed_out[30:0]</obj_property>
+      <obj_property name="ObjectShortName">fixed_out[30:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">23</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fisr2_rtl_tb/valid_out" type="logic">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fisr2_rtl_tb/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fisr2_rtl_tb/conv_start" type="logic">
+      <obj_property name="ElementShortName">conv_start</obj_property>
+      <obj_property name="ObjectShortName">conv_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fisr2_rtl_tb/conv_ready" type="logic">
+      <obj_property name="ElementShortName">conv_ready</obj_property>
+      <obj_property name="ObjectShortName">conv_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fisr2_rtl_tb/conv_input" type="array">
+      <obj_property name="ElementShortName">conv_input[31:0]</obj_property>
+      <obj_property name="ObjectShortName">conv_input[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fisr2_rtl_tb/count" type="array">
+      <obj_property name="ElementShortName">count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count[3:0]</obj_property>
+   </wvobject>
+</wave_config>
