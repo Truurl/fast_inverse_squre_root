@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="fiser_fixed_acc_rst_ps7_0_100M_0_synth_1" LaunchDir="D:/Projects/fast_inverse_square_root_acc/fast_inverse_square_root_acc.runs/fiser_fixed_acc_rst_ps7_0_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fiser_fixed_acc_processing_system7_0_0_synth_1" LaunchDir="D:/Projects/fast_inverse_square_root_acc/fast_inverse_square_root_acc.runs/fiser_fixed_acc_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fiser_fixed_acc_auto_pc_0_synth_1" LaunchDir="D:/Projects/fast_inverse_square_root_acc/fast_inverse_square_root_acc.runs/fiser_fixed_acc_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fiser_fixed_acc_fisr_fixed_ip_0_0_synth_1" LaunchDir="D:/Projects/fast_inverse_square_root_acc/fast_inverse_square_root_acc.runs/fiser_fixed_acc_fisr_fixed_ip_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/Projects/fast_inverse_square_root_acc/fast_inverse_square_root_acc.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fiser_fixed_acc_rst_ps7_0_100M_0_synth_1"/>
+		<Parent Id="fiser_fixed_acc_processing_system7_0_0_synth_1"/>
+		<Parent Id="fiser_fixed_acc_auto_pc_0_synth_1"/>
+		<Parent Id="fiser_fixed_acc_fisr_fixed_ip_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

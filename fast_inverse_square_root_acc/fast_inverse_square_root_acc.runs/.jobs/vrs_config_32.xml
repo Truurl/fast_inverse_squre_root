@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="fiser_fixed_acc_fisr_fixed_ip_0_0_synth_1" LaunchDir="D:/Projects/fast_inverse_square_root_acc/fast_inverse_square_root_acc.runs/fiser_fixed_acc_fisr_fixed_ip_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

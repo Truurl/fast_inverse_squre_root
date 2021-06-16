@@ -1,0 +1,75 @@
+23:27:05 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:29:22 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:46:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:108:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:29:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+../main.c:111:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+      sprintf(buffer, "\n\r%d\n\r", fixed_out);
+                           ~^
+                           %ld
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77856	   2576	  23328	 103760	  19550	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+23:31:05 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:46:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:118:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:29:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+../main.c:121:28: warning: format '%d' expects argument of type 'int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+      sprintf(buffer, "\n\r%d\n\r", fixed_out);
+                           ~^
+                           %ld
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77984	   2576	  23328	 103888	  195d0	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '

@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../fixed_fisr_rtl_1.0/hdl/fixed_fisr_rtl_v1_0_S00_AXI.v" \
+
+sv xil_defaultlib  \
+"../../../../fixed_fisr_rtl_1.0/hdl/fixed_fisr_rtl.sv" \
+
+verilog xil_defaultlib  \
+"../../../../fixed_fisr_rtl_1.0/hdl/fixed_fisr_rtl_v1_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

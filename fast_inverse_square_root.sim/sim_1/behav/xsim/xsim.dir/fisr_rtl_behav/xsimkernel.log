@@ -1,7 +1,0 @@
-Running: xsim.dir/fisr_rtl_behav/xsimk.exe -simmode gui -wdb fisr_rtl_behav.wdb -simrunnum 0 -socket 53947
-Design successfully loaded
-Design Loading Memory Usage: 6180 KB (Peak: 6180 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 6816 KB (Peak: 6816 KB)
-Simulation CPU Usage: 30 ms

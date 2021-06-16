@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER fixed_fisr_rtl
+	OPTION supported_peripherals = (fixed_fisr_rtl);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = fixed_fisr_rtl;
+END DRIVER
