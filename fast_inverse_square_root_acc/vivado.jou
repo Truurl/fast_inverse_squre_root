@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun 16 23:13:47 2021
+# Process ID: 11380
+# Current directory: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12964 D:\Projects\fast_inverse_square_root\fast_inverse_square_root_acc\fast_inverse_square_root_acc.xpr
+# Log file: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/vivado.log
+# Journal file: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.xpr
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name fisr_fixed_ip_v1_0_project -directory D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.tmp/fisr_fixed_ip_v1_0_project d:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+set_property library xil_defaultlib [get_files  d:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0/src/fisr_fixed_ip_v1_0_S00_AXI.v]
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 15 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:fisr_fixed_ip:1.0 [get_ips  fiser_fixed_acc_fisr_fixed_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips fiser_fixed_acc_fisr_fixed_ip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/fiser_fixed_acc.bd]
+catch { config_ip_cache -export [get_ips -all fiser_fixed_acc_fisr_fixed_ip_0_0] }
+catch { config_ip_cache -export [get_ips -all fiser_fixed_acc_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/fiser_fixed_acc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/fiser_fixed_acc.bd]
+launch_runs -jobs 4 fiser_fixed_acc_fisr_fixed_ip_0_0_synth_1
+export_simulation -of_objects [get_files D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/fiser_fixed_acc.bd] -directory D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.ip_user_files/sim_scripts -ip_user_files_dir D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.ip_user_files -ipstatic_source_dir D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.cache/compile_simlib/modelsim} {questa=D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.cache/compile_simlib/questa} {riviera=D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.cache/compile_simlib/riviera} {activehdl=D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.runs/impl_1/fiser_fixed_acc_wrapper.sysdef D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.sdk/fiser_fixed_acc_wrapper.hdf
+
+launch_sdk -workspace D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.sdk -hwspec D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.sdk/fiser_fixed_acc_wrapper.hdf
