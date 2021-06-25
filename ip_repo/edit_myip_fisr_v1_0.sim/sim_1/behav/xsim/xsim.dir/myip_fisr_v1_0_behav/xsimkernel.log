@@ -1,0 +1,7 @@
+Running: xsim.dir/myip_fisr_v1_0_behav/xsimk.exe -simmode gui -wdb myip_fisr_v1_0_behav.wdb -simrunnum 0 -socket 54627
+Design successfully loaded
+Design Loading Memory Usage: 6284 KB (Peak: 6284 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6940 KB (Peak: 6940 KB)
+Simulation CPU Usage: 15 ms

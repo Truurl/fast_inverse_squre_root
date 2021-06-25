@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Thu Jun 17 00:20:11 2021
+# Process ID: 14224
+# Current directory: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.sdk/webtalk/webtalk.log
+# Journal file: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

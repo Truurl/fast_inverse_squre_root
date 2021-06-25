@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/fiser_fixed_acc/ip/fiser_fixed_acc_rst_ps7_0_100M_0/sim/fiser_fixed_acc_rst_ps7_0_100M_0.vhd" \
+
+nosort

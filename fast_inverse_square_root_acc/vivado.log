@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun 16 23:13:47 2021
+# Process ID: 11380
+# Current directory: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12964 D:\Projects\fast_inverse_square_root\fast_inverse_square_root_acc\fast_inverse_square_root_acc.xpr
+# Log file: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/vivado.log
+# Journal file: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Projects/fast_inverse_square_root_acc' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 684.363 ; gain = 93.262
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name fisr_fixed_ip_v1_0_project -directory D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.tmp/fisr_fixed_ip_v1_0_project d:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'd:/projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.tmp/fisr_fixed_ip_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 870.812 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0/src/fisr_fixed_ip_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0/hdl/fisr_fixed_ip_v1_0.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 870.812 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property library xil_defaultlib [get_files  d:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0/src/fisr_fixed_ip_v1_0_S00_AXI.v]
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0/hdl/fisr_fixed_ip_v1_0.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0/hdl/fisr_fixed_ip_v1_0.v:]
+[Wed Jun 16 23:17:03 2021] Launched synth_1...
+Run output will be captured here: d:/projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.tmp/fisr_fixed_ip_v1_0_project/fisr_fixed_ip_v1_0_project.runs/synth_1/runme.log
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'd:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0/component.xml' ignored by IP packager.
+set_property core_revision 15 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/Projects/fast_inverse_square_root/ip_repo/fisr_fixed_ip_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:fisr_fixed_ip:1.0 [get_ips  fiser_fixed_acc_fisr_fixed_ip_0_0] -log ip_upgrade.log
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:user:fisr_fixed_ip:1.0 - fisr_fixed_ip_0
+Successfully read diagram <fiser_fixed_acc> from BD file <D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/fiser_fixed_acc.bd>
+Upgrading 'D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/fiser_fixed_acc.bd'
+INFO: [IP_Flow 19-3422] Upgraded fiser_fixed_acc_fisr_fixed_ip_0_0 (fisr_fixed_ip_v1.0 1.0) from revision 14 to revision 15
+Wrote  : <D:\Projects\fast_inverse_square_root\fast_inverse_square_root_acc\fast_inverse_square_root_acc.srcs\sources_1\bd\fiser_fixed_acc\fiser_fixed_acc.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 915.613 ; gain = 44.801
+export_ip_user_files -of_objects [get_ips fiser_fixed_acc_fisr_fixed_ip_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/fiser_fixed_acc.bd]
+Wrote  : <D:\Projects\fast_inverse_square_root\fast_inverse_square_root_acc\fast_inverse_square_root_acc.srcs\sources_1\bd\fiser_fixed_acc\fiser_fixed_acc.bd> 
+VHDL Output written to : D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/synth/fiser_fixed_acc.v
+VHDL Output written to : D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/sim/fiser_fixed_acc.v
+VHDL Output written to : D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/hdl/fiser_fixed_acc_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fisr_fixed_ip_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/ip/fiser_fixed_acc_auto_pc_0/fiser_fixed_acc_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/hw_handoff/fiser_fixed_acc.hwh
+Generated Block Design Tcl file D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/hw_handoff/fiser_fixed_acc_bd.tcl
+Generated Hardware Definition File D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/synth/fiser_fixed_acc.hwdef
+catch { config_ip_cache -export [get_ips -all fiser_fixed_acc_fisr_fixed_ip_0_0] }
+catch { config_ip_cache -export [get_ips -all fiser_fixed_acc_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP fiser_fixed_acc_auto_pc_0, cache-ID = a1198d17aac9ed2a; cache size = 13.969 MB.
+export_ip_user_files -of_objects [get_files D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/fiser_fixed_acc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/fiser_fixed_acc.bd]
+launch_runs -jobs 4 fiser_fixed_acc_fisr_fixed_ip_0_0_synth_1
+[Wed Jun 16 23:18:42 2021] Launched fiser_fixed_acc_fisr_fixed_ip_0_0_synth_1...
+Run output will be captured here: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.runs/fiser_fixed_acc_fisr_fixed_ip_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.srcs/sources_1/bd/fiser_fixed_acc/fiser_fixed_acc.bd] -directory D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.ip_user_files/sim_scripts -ip_user_files_dir D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.ip_user_files -ipstatic_source_dir D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.cache/compile_simlib/modelsim} {questa=D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.cache/compile_simlib/questa} {riviera=D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.cache/compile_simlib/riviera} {activehdl=D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Jun 16 23:21:49 2021] Launched synth_1...
+Run output will be captured here: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Jun 16 23:22:35 2021] Launched impl_1...
+Run output will be captured here: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jun 16 23:24:25 2021] Launched impl_1...
+Run output will be captured here: D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.runs/impl_1/runme.log
+file copy -force D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.runs/impl_1/fiser_fixed_acc_wrapper.sysdef D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.sdk/fiser_fixed_acc_wrapper.hdf
+
+launch_sdk -workspace D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.sdk -hwspec D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.sdk/fiser_fixed_acc_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.sdk -hwspec D:/Projects/fast_inverse_square_root/fast_inverse_square_root_acc/fast_inverse_square_root_acc.sdk/fiser_fixed_acc_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 17 00:21:04 2021...

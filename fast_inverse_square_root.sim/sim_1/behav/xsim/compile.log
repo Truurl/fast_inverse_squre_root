@@ -1,8 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/fisr_rtl.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fisr_rtl
-INFO: [VRFC 10-311] analyzing module float_2_fixed
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sources_1/new/float_to_fixed.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module float_to_fixed
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sim_1/new/fisr_rtl_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module fisr_rtl_tb
-WARNING: [VRFC 10-986] literal value truncated to fit in 23 bits [D:/Projects/fast_inverse_square_root_K_B/fast_invrse_square_root_kb/fast_inverse_square_root/fast_inverse_square_root.srcs/sim_1/new/fisr_rtl_tb.sv:101]

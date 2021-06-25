@@ -1,0 +1,390 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jun 15 23:13:53 2021
+| Host         : albert-pc running 64-bit major release  (build 9200)
+| Command      : report_methodology -file fisr_fixed_acc_wrapper_methodology_drc_routed.rpt -pb fisr_fixed_acc_wrapper_methodology_drc_routed.pb -rpx fisr_fixed_acc_wrapper_methodology_drc_routed.rpx
+| Design       : fisr_fixed_acc_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 71
++-----------+----------+-----------------------+------------+
+| Rule      | Severity | Description           | Violations |
++-----------+----------+-----------------------+------------+
+| TIMING-16 | Warning  | Large setup violation | 71         |
++-----------+----------+-----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.087 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_27/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.107 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[21]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.193 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[17]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.286 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[32]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.289 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_3/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.312 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_26/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.316 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[31]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.324 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[22]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.324 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[33]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.348 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_25/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.370 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[34]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.409 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[36]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.410 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[42]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -1.426 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[26]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -1.427 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_21/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -1.445 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[37]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -1.464 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[35]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -1.473 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_20/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -1.494 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[24]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -1.497 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[39]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -1.509 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[38]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -1.514 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[40]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -1.534 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_12/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -1.551 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[44]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -1.552 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[41]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -1.552 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_23/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -1.557 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[18]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -1.565 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_7/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -1.571 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_2/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -1.577 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_22/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -1.578 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_8/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -1.587 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_10/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -1.604 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_11/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -1.607 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[43]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -1.621 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_19/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -1.631 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_5/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -1.645 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[25]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -1.646 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[46]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -1.647 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[47]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -1.648 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[50]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -1.665 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[52]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -1.702 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[27]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -1.709 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[28]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -1.714 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_17/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -1.716 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_24/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -1.719 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_6/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -1.721 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_4/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -1.731 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[49]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -1.736 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_18/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#50 Warning
+Large setup violation  
+There is a large setup violation of -1.739 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[20]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#51 Warning
+Large setup violation  
+There is a large setup violation of -1.741 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[48]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#52 Warning
+Large setup violation  
+There is a large setup violation of -1.744 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[45]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#53 Warning
+Large setup violation  
+There is a large setup violation of -1.758 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_9/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#54 Warning
+Large setup violation  
+There is a large setup violation of -1.779 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[23]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#55 Warning
+Large setup violation  
+There is a large setup violation of -1.821 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[29]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#56 Warning
+Large setup violation  
+There is a large setup violation of -1.831 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_1/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#57 Warning
+Large setup violation  
+There is a large setup violation of -1.838 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[51]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#58 Warning
+Large setup violation  
+There is a large setup violation of -1.839 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_16/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#59 Warning
+Large setup violation  
+There is a large setup violation of -1.843 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_15/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#60 Warning
+Large setup violation  
+There is a large setup violation of -1.871 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[58]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#61 Warning
+Large setup violation  
+There is a large setup violation of -1.874 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[54]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#62 Warning
+Large setup violation  
+There is a large setup violation of -1.933 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[60]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#63 Warning
+Large setup violation  
+There is a large setup violation of -1.952 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[55]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#64 Warning
+Large setup violation  
+There is a large setup violation of -1.967 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[53]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#65 Warning
+Large setup violation  
+There is a large setup violation of -1.969 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[56]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#66 Warning
+Large setup violation  
+There is a large setup violation of -2.081 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[57]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#67 Warning
+Large setup violation  
+There is a large setup violation of -2.088 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[61]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#68 Warning
+Large setup violation  
+There is a large setup violation of -2.098 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#69 Warning
+Large setup violation  
+There is a large setup violation of -2.125 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[30]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#70 Warning
+Large setup violation  
+There is a large setup violation of -2.148 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/psdsp_14/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#71 Warning
+Large setup violation  
+There is a large setup violation of -2.233 ns between fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/state_reg[4]/C (clocked by clk_fpga_0) and fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp1_reg[59]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+

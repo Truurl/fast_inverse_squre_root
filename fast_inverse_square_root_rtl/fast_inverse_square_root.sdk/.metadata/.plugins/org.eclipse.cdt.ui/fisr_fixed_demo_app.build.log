@@ -1,0 +1,37 @@
+23:39:25 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -I../../fisr_fixed_demo_app_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:46:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:94:7: warning: unused variable 'buffer' [-Wunused-variable]
+  char buffer[16];
+       ^~~~~~
+../main.c:92:8: warning: variable 'number' set but not used [-Wunused-but-set-variable]
+  float number = 0.0;
+        ^~~~~~
+../main.c:90:10: warning: unused variable 'cos' [-Wunused-variable]
+ s32 sin, cos;
+          ^~~
+../main.c:90:5: warning: unused variable 'sin' [-Wunused-variable]
+ s32 sin, cos;
+     ^~~
+../main.c:89:5: warning: unused variable 'angle' [-Wunused-variable]
+ u32 angle = 0;
+     ^~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "fisr_fixed_demo_app.elf"  ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+g:/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: fisr_fixed_demo_app.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+g:/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 49160 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:37: fisr_fixed_demo_app.elf] Error 1
+
+23:39:26 Build Finished (took 1s.55ms)
+

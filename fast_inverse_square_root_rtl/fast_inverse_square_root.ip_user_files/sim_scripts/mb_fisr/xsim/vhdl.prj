@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../bd/mb_fisr/ip/mb_fisr_microblaze_0_0/sim/mb_fisr_microblaze_0_0.vhd" \
+"../../../bd/mb_fisr/ip/mb_fisr_axi_gpio_0_0/sim/mb_fisr_axi_gpio_0_0.vhd" \
+"../../../bd/mb_fisr/ip/mb_fisr_axi_gpio_1_0/sim/mb_fisr_axi_gpio_1_0.vhd" \
+"../../../bd/mb_fisr/ip/mb_fisr_axi_gpio_2_0/sim/mb_fisr_axi_gpio_2_0.vhd" \
+"../../../bd/mb_fisr/ip/mb_fisr_dlmb_v10_0/sim/mb_fisr_dlmb_v10_0.vhd" \
+"../../../bd/mb_fisr/ip/mb_fisr_ilmb_v10_0/sim/mb_fisr_ilmb_v10_0.vhd" \
+"../../../bd/mb_fisr/ip/mb_fisr_dlmb_bram_if_cntlr_0/sim/mb_fisr_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/mb_fisr/ip/mb_fisr_ilmb_bram_if_cntlr_0/sim/mb_fisr_ilmb_bram_if_cntlr_0.vhd" \
+"../../../bd/mb_fisr/ip/mb_fisr_mdm_1_0/sim/mb_fisr_mdm_1_0.vhd" \
+"../../../bd/mb_fisr/ip/mb_fisr_rst_clk_wiz_1_100M_0/sim/mb_fisr_rst_clk_wiz_1_100M_0.vhd" \
+
+nosort

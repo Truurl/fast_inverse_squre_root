@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jun 14 23:11:49 2021
+# Process ID: 4112
+# Current directory: D:/Projects/fast_inverse_square_root/fast_inverse_square_root.runs/mb_fisr_axi_gpio_0_0_synth_1
+# Command line: vivado.exe -log mb_fisr_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_fisr_axi_gpio_0_0.tcl
+# Log file: D:/Projects/fast_inverse_square_root/fast_inverse_square_root.runs/mb_fisr_axi_gpio_0_0_synth_1/mb_fisr_axi_gpio_0_0.vds
+# Journal file: D:/Projects/fast_inverse_square_root/fast_inverse_square_root.runs/mb_fisr_axi_gpio_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mb_fisr_axi_gpio_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Projects/ip_repo/fixed_fisr_rtl_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mb_fisr_axi_gpio_0_0, cache-ID = bc98b4cc5e8d8238.
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 14 23:11:54 2021...

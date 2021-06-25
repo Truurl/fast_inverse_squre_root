@@ -1,0 +1,174 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jun 15 23:13:52 2021
+| Host         : albert-pc running 64-bit major release  (build 9200)
+| Command      : report_drc -file fisr_fixed_acc_wrapper_drc_routed.rpt -pb fisr_fixed_acc_wrapper_drc_routed.pb -rpx fisr_fixed_acc_wrapper_drc_routed.rpx
+| Design       : fisr_fixed_acc_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 27
++---------+----------+-------------------------------------------------+------------+
+| Rule    | Severity | Description                                     | Violations |
++---------+----------+-------------------------------------------------+------------+
+| DPIP-1  | Warning  | Input pipelining                                | 5          |
+| DPOP-1  | Warning  | PREG Output pipelining                          | 10         |
+| DPOP-2  | Warning  | MREG Output pipelining                          | 10         |
+| REQP-24 | Advisory | enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND | 2          |
++---------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out input fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__0 input fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__0 input fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__1 input fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__2 input fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10 output fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10__0 output fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10__1 output fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10__2 output fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp20 output fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp20/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp20__0 output fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp20__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out output fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__0 output fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__1 output fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__2 output fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10 multiplier stage fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10__0 multiplier stage fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10__1 multiplier stage fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10__2 multiplier stage fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp10__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp20 multiplier stage fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp20/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp20__0 multiplier stage fisr_fixed_acc_i/fisr_fixed_ip_0/inst/fisr_fixed_ip_v1_0_S00_AXI_inst/fisr/mul_reg_temp20__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out multiplier stage fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__0 multiplier stage fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__1 multiplier stage fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__2 multiplier stage fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-24#1 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__0: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+REQP-24#2 Advisory
+enum_BREG_0_connects_CEB1_GND_connects_CEB2_GND  
+fisr_fixed_acc_i/fisr_fixed_ip_0/p_1_out__2: When DSP48E1 attribute BREG is set to 0, the CEB1 and CEB2 pins should be tied to GND to save power.
+Related violations: <none>
+
+

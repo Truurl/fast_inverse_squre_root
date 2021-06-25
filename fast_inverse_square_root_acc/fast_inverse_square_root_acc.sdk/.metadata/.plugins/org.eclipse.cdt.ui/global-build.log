@@ -1,0 +1,1137 @@
+23:58:51 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:58:52 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:59:12 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:133:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+../main.c:113:7: warning: unused variable 'buffer' [-Wunused-variable]
+  char buffer[16];
+       ^~~~~~
+../main.c:112:8: warning: unused variable 'x' [-Wunused-variable]
+  float x = 0.0;
+        ^
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  53368	   2576	  23336	  79280	  135b0	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+23:59:21 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:134:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+../main.c:114:7: warning: unused variable 'buffer' [-Wunused-variable]
+  char buffer[16];
+       ^~~~~~
+../main.c:113:8: warning: unused variable 'x' [-Wunused-variable]
+  float x = 0.0;
+        ^
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  53376	   2576	  23336	  79288	  135b8	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+23:59:24 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:00:14 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:135:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+../main.c:115:7: warning: unused variable 'buffer' [-Wunused-variable]
+  char buffer[16];
+       ^~~~~~
+../main.c:114:8: warning: unused variable 'x' [-Wunused-variable]
+  float x = 0.0;
+        ^
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  53440	   2576	  23336	  79352	  135f8	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:00:16 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:00:39 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:136:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+../main.c:116:7: warning: unused variable 'buffer' [-Wunused-variable]
+  char buffer[16];
+       ^~~~~~
+../main.c:115:8: warning: unused variable 'x' [-Wunused-variable]
+  float x = 0.0;
+        ^
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  53448	   2576	  23336	  79360	  13600	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:00:42 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:02:06 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:02:27 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:124:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:136:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78000	   2576	  23328	 103904	  195e0	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:02:39 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:03:05 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'printfixedPoint':
+../main.c:105:2: error: expected ',' or ';' before 'xil_printf'
+  xil_printf("\n\r%f\n\r", print);
+  ^~~~~~~~~~
+../main.c:103:8: warning: unused variable 'print' [-Wunused-variable]
+  float print = (float) fixed_point
+        ^~~~~
+../main.c: In function 'main':
+../main.c:125:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:137:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+make: *** [subdir.mk:26: main.o] Error 1
+00:03:09 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:125:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:137:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77936	   2576	  23328	 103840	  195a0	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:03:12 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:04:00 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:125:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:137:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78000	   2576	  23328	 103904	  195e0	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:04:03 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:04:19 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:125:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:137:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78000	   2576	  23328	 103904	  195e0	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:04:23 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:04:51 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:125:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:137:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78000	   2576	  23328	 103904	  195e0	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:04:55 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:05:23 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:126:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:138:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78000	   2576	  23328	 103904	  195e0	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:05:25 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:06:09 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'printfixedPoint':
+../main.c:106:8: error: redeclaration of 'print' with no linkage
+  float print = (float) fixed_point / calculateFloatPower(2.0, 23);
+        ^~~~~
+../main.c:104:8: note: previous declaration of 'print' was here
+  float print;
+        ^~~~~
+../main.c:106:8: warning: unused variable 'print' [-Wunused-variable]
+  float print = (float) fixed_point / calculateFloatPower(2.0, 23);
+        ^~~~~
+../main.c:101:7: warning: unused variable 'buffer' [-Wunused-variable]
+  char buffer[32];
+       ^~~~~~
+../main.c: In function 'main':
+../main.c:127:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:139:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+make: *** [subdir.mk:26: main.o] Error 1
+00:06:36 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'printfixedPoint':
+../main.c:107:29: error: 'point' undeclared (first use in this function); did you mean 'print'?
+  sprintf(buffer, "%f\\n\r", point);
+                             ^~~~~
+                             print
+../main.c:107:29: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:106:8: warning: unused variable 'print' [-Wunused-variable]
+  float print = (float) fixed_point / calculateFloatPower(2.0, 23);
+        ^~~~~
+../main.c: In function 'main':
+../main.c:128:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:140:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+make: *** [subdir.mk:26: main.o] Error 1
+00:06:41 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'printfixedPoint':
+../main.c:107:28: error: 'point' undeclared (first use in this function); did you mean 'print'?
+  sprintf(buffer, "%f\n\r", point);
+                            ^~~~~
+                            print
+../main.c:107:28: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:106:8: warning: unused variable 'print' [-Wunused-variable]
+  float print = (float) fixed_point / calculateFloatPower(2.0, 23);
+        ^~~~~
+../main.c: In function 'main':
+../main.c:128:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:140:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+make: *** [subdir.mk:26: main.o] Error 1
+00:06:49 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:128:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:140:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78008	   2576	  23328	 103912	  195e8	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:06:51 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:07:09 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'printfixedPoint':
+../main.c:108:2: error: called object 'print' is not a function or function pointer
+  print(buffer);
+  ^~~~~
+../main.c:106:8: note: declared here
+  float print = (float) fixed_point / calculateFloatPower(2.0, 23);
+        ^~~~~
+../main.c: In function 'main':
+../main.c:129:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:141:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+make: *** [subdir.mk:26: main.o] Error 1
+00:07:47 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:129:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:141:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78008	   2576	  23328	 103912	  195e8	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:07:50 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:08:28 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:117:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:129:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76312	   2580	  23328	 102220	  18f4c	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:09:49 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:117:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:129:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+../main.c:130:17: warning: unknown escape sequence: '\040'
+      xil_printf("1 \ sqrt(%f)", number);
+                 ^~~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78008	   2576	  23328	 103912	  195e8	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:09:52 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:10:06 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:117:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:129:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78008	   2576	  23328	 103912	  195e8	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:10:15 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:10:23 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:117:24: warning: unknown conversion type character '\x0a' in format [-Wformat=]
+      sprintf(buffer, "%\n\r%f\n\r", x);
+                        ^~
+../main.c:129:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  78008	   2576	  23328	 103912	  195e8	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:10:28 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:124:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+../main.c:109:7: warning: unused variable 'buffer' [-Wunused-variable]
+  char buffer[16];
+       ^~~~~~
+../main.c:108:8: warning: unused variable 'x' [-Wunused-variable]
+  float x = 0.0;
+        ^
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77936	   2576	  23328	 103840	  195a0	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:10:35 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:120:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77936	   2576	  23328	 103840	  195a0	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:10:38 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:10:52 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:119:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77928	   2576	  23328	 103832	  19598	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:10:59 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:11:33 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:119:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77928	   2576	  23328	 103832	  19598	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:11:35 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:13:57 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:120:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77976	   2576	  23328	 103880	  195c8	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:14:00 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:14:28 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:15:12 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:120:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77976	   2576	  23328	 103880	  195c8	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:15:14 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:15:48 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:121:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+../main.c:105:7: warning: unused variable 'buffer' [-Wunused-variable]
+  char buffer[64];
+       ^~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  77976	   2576	  23328	 103880	  195c8	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:16:08 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:121:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76352	   2580	  23328	 102260	  18f74	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:16:11 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:16:28 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:17:06 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:17:52 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+00:18:39 **** Auto Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/include -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.c"
+../main.c: In function 'readFloat':
+../main.c:44:8: warning: unused variable 'result' [-Wunused-variable]
+  float result = 0.0;
+        ^~~~~~
+../main.c: In function 'main':
+../main.c:121:28: warning: pointer targets in passing argument 2 of 'calculateFISR' differ in signedness [-Wpointer-sign]
+      calculateFISR(number, &fixed_out);
+                            ^
+../main.c:36:5: note: expected 's32 * {aka long int *}' but argument is of type 'u32 * {aka long unsigned int *}'
+ int calculateFISR(float number, s32* fixed_out);
+     ^~~~~~~~~~~~~
+'Finished building: ../main.c'
+' '
+'Building target: fisr_fixed_demo_app.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../fisr_fixed_demo_app_bsp/ps7_cortexa9_0/lib -o "fisr_fixed_demo_app.elf"  ./fisr_fixed.o ./main.o ./platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fisr_fixed_demo_app.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size fisr_fixed_demo_app.elf  |tee "fisr_fixed_demo_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  76352	   2580	  23328	 102260	  18f74	fisr_fixed_demo_app.elf
+'Finished building: fisr_fixed_demo_app.elf.size'
+' '
+00:18:51 **** Incremental Build of configuration Debug for project fisr_fixed_demo_app ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
